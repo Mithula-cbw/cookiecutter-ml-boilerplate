@@ -1,0 +1,8 @@
+{
+    "project_slug": "my_project",
+    "author_name": "Your Name",
+    "author_email": "Your Email",
+    "version": "0.1.0",
+    "description": "A brief description of your project.",
+    "requires_python": ">=3.9"
+}
