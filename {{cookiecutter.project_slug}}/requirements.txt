@@ -1,0 +1,4 @@
+# Python requirements for {{ cookiecutter.project_slug }}
+pandas
+numpy
+scikit-learn

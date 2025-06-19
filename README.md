@@ -54,6 +54,15 @@ your_project_name/
 ├── README.md
 └── .gitignore
 ```
+## 📦 Tracking Empty Folders with `.gitkeep`
+
+Git does not track empty folders. To ensure critical directories like `models/`, `data/raw/`, and `data/processed/` are preserved in version control (even if initially empty), this template includes `.gitkeep` files inside them.
+
+- `models/.gitkeep`: Placeholder to keep the directory for saved models.
+- `data/raw/.gitkeep`: Placeholder to indicate where raw data should be placed.
+- `data/processed/.gitkeep`: Placeholder for processed datasets.
+
+You can safely delete these `.gitkeep` files once the directories contain actual files.
 
 ## Customization
 
