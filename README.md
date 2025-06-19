@@ -1,4 +1,4 @@
-# mr_ml_boilerplate
+# cookiecutter-ml-template
 
 A Cookiecutter template for quickly setting up a basic machine learning project with best practices, modular structure, and reproducibility.
 
@@ -19,12 +19,12 @@ You can use either the GitHub HTTPS URL or your local path:
 
 **From GitHub:**
 ```bash
-cookiecutter https://github.com/Mathanraj-Sharma/mr_ml_boilerplate.git
+cookiecutter https://github.com/Mithula-cbw/cookiecutter-ml-template
 ```
 
 **From a Local Path (if you have cloned the repo):**
 ```bash
-cookiecutter path/to/mr_ml_boilerplate
+cookiecutter path/to/cookiecutter-ml-template
 ```
 
 You will be prompted to enter some information about your new project (such as project name, author, etc.).
@@ -51,9 +51,19 @@ your_project_name/
 ├── models/
 ├── requirements.txt
 ├── Makefile
+├── Dockerfile
 ├── README.md
 └── .gitignore
 ```
+## 📦 Tracking Empty Folders with `.gitkeep`
+
+Git does not track empty folders. To ensure critical directories like `models/`, `data/raw/`, and `data/processed/` are preserved in version control (even if initially empty), this template includes `.gitkeep` files inside them.
+
+- `models/.gitkeep`: Placeholder to keep the directory for saved models.
+- `data/raw/.gitkeep`: Placeholder to indicate where raw data should be placed.
+- `data/processed/.gitkeep`: Placeholder for processed datasets.
+
+You can safely delete these `.gitkeep` files once the directories contain actual files.
 
 ## Customization
 
@@ -61,10 +71,7 @@ your_project_name/
 - Add custom scripts and notebooks to the respective directories.
 - Modify or extend the Makefile for your workflow.
 
+
 ## Contributing
 
-Feel free to fork this template and submit pull requests to improve it!
-
-## License
-
-[Apache License](LICENSE)
+Feel free to fork and customize your own version as needed!
